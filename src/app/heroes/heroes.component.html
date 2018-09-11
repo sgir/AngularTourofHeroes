@@ -8,10 +8,10 @@
         <!-- Example of a two way data binding-->
         <input [(ngModel)]="hero.name" placeholder="name">
     </label>
-    <label> Heroes List:
+    <label class="heroes"> Heroes List:
         <!-- Example of a ngFor -->
         <ul>
-            <li *ngFor= "let hero of Heroes">
+            <li class="heroes" *ngFor= "let hero of Heroes">
                 <span class="badge">{{hero.id}}</span> {{hero.name}}
             </li>
         </ul>
